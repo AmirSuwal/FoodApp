@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amir.foodapp.navigation.Navigation"
+    tools:showIn="@layout/app_bar_navigation">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/searchfod" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_gapp"
+            android:layout_marginRight="@dimen/margin_gapp"
+            android:layout_gravity="bottom|end">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_gapppp"
+                        android:background="@drawable/ic_location_pin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Kathmandu,NP" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_gapp"
+                        android:layout_marginLeft="@dimen/margin_gapp"
+                        android:layout_marginRight="@dimen/margin_gapp"
+                        android:layout_marginTop="@dimen/margin_gappp"
+                        android:background="@drawable/login_button_bg"
+                        android:hint="Search"
+                        android:paddingLeft="@dimen/icon_paddingggg"
+                        />
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_margin="@dimen/margin_gap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:background="@drawable/color_button"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>
